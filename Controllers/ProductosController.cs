@@ -18,7 +18,7 @@ namespace CatalogoProductos.Controllers
         }
 
         /// <summary>
-        /// Obtiene todos los productos
+        /// Obtiene todos los productos de la bd
         /// </summary>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Producto>>> GetProductos()
@@ -36,7 +36,7 @@ namespace CatalogoProductos.Controllers
         }
 
         /// <summary>
-        /// Obtiene un producto por ID
+        /// Obtiene un producto por ID de la bd
         /// </summary>
         [HttpGet("{id}")]
         public async Task<ActionResult<Producto>> GetProducto(int id)
@@ -58,7 +58,7 @@ namespace CatalogoProductos.Controllers
         }
 
         /// <summary>
-        /// Crea un nuevo producto
+        /// Crea un nuevo producto en la bd
         /// </summary>
         [HttpPost]
         public async Task<ActionResult<Producto>> CreateProducto(Producto producto)
@@ -81,7 +81,7 @@ namespace CatalogoProductos.Controllers
         }
 
         /// <summary>
-        /// Actualiza un producto existente
+        /// Actualiza un producto existente de la bd
         /// </summary>
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateProducto(int id, Producto producto)
@@ -109,7 +109,7 @@ namespace CatalogoProductos.Controllers
         }
 
         /// <summary>
-        /// Elimina un producto
+        /// Elimina un producto de la bd
         /// </summary>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProducto(int id)
